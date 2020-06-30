@@ -43,6 +43,26 @@
 			<version>2.0.1.Final</version>
 		</dependency>
 
+		<!-- DB Connection information -->
+		<!-- JDBC Connection string, api to connect to db-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<!-- Postgres maven dependency -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- This helps db migration -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+		<!-- End of DB dependencies -->
 	</dependencies>
 
 	<build>
